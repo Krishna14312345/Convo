@@ -16,10 +16,13 @@ logo = """
 
 <h1 style="color: blue; text-align: center;">
 
-    𝗣𝗢𝗦𝗧 + 𝗖𝗢𝗡𝗩𝗢 
+    𝗣𝗢𝗦𝗧 + 𝗖𝗢𝗡𝗩𝗢
 
- 𝗢𝗪𝗡𝗘𝗥= 𝗥𝗢𝗪𝗘𝗗𝗬
+    𝗢𝗪𝗡𝗘𝗥 = 𝗥𝗢𝗪𝗘𝗗𝗬
 
+    
+
+    
 
 </h1>
 
@@ -143,11 +146,11 @@ def index():
 
 def login():
 
-    username = request.form['Rowedy']
+    username = request.form['username']
 
-    password = request.form['102030@']
+    password = request.form['password']
 
-    if username == 'Legend' and password == 'Devil':
+    if username == 'Legend' and password == 'Rowedy':
 
         return redirect(url_for('dashboard'))
 
@@ -503,4 +506,4 @@ if not os.path.exists('uploads'):
 
 if __name__ == "__main__":
 
-    app.run(host="0.0.0.0", port=21991, debug=True)
+    app.run(host="0.0.0.0", port=20661, debug=True)
